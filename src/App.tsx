@@ -1,6 +1,8 @@
 import "./App.css";
 import ProjectsPage from "./projects/ProjectsPage";
 import Greet from "./Greeter/Greet";
+import Hello from "./HelloWorld/Hello";
+import FruitList from "./Fruit/FruitList";
 
 function App() {
   // return (
@@ -9,16 +11,25 @@ function App() {
   //   </blockquote>
   // );
   const person = { firstName: "Siddhesh" };
+  const data = [
+    { id: 1, name: "apple" },
+    { id: 2, name: "orange" },
+    { id: 3, name: "blueberry" },
+    { id: 4, name: "banana" },
+    { id: 5, name: "kiwi" },
+  ];
   return (
     <>
       {/* <div className="container">
         <ProjectsPage />
       </div> */}
 
-      <div className="container">
+      {/* <div className="container">
         <Greet first="Umesh" last="Kumar" />
         <Greet person={person} />
-      </div>
+      </div> */}
+      <Hello name="Umesh" />
+      <FruitList names={data} />
     </>
   );
 }
