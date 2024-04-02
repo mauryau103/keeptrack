@@ -3,6 +3,8 @@ import ProjectsPage from "./projects/ProjectsPage";
 import Greet from "./Greeter/Greet";
 import Hello from "./HelloWorld/Hello";
 import FruitList from "./Fruit/FruitList";
+import { MOCK_PROJECTS } from "./projects/MockProjects";
+import ProjectList from "./projects/ProjectList";
 
 function App() {
   // return (
@@ -28,8 +30,10 @@ function App() {
         <Greet first="Umesh" last="Kumar" />
         <Greet person={person} />
       </div> */}
-      <Hello name="Umesh" />
-      <FruitList names={data} />
+      {/* <Hello name="Umesh" />
+      <FruitList names={data} /> */}
+
+      <ProjectList projects={MOCK_PROJECTS} />
     </>
   );
 }
